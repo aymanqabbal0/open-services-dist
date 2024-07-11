@@ -13961,6 +13961,9 @@ class TokensService {
   });
 }
 const options = [{
+  label: 'Never',
+  value: 'N'
+}, {
   label: 'Week',
   value: 'W'
 }, {
@@ -15309,19 +15312,22 @@ const menu = [{
     type: 'item',
     icon: 'circle',
     url: 'user/user-list'
-  }, {
-    id: 'groups',
-    title: 'Organisations',
-    type: 'item',
-    icon: 'circle',
-    url: 'user/orgs'
-  }, {
-    id: 'edit',
-    title: 'Edit',
-    type: 'item',
-    icon: 'circle',
-    url: 'user/user-edit'
-  }]
+  }
+  // {
+  //   id: 'groups',
+  //   title: 'Organisations',
+  //   type: 'item',
+  //   icon: 'circle',
+  //   url: 'user/orgs'
+  // },
+  // {
+  //   id: 'edit',
+  //   title: 'Edit',
+  //   type: 'item',
+  //   icon: 'circle',
+  //   url: 'user/user-edit'
+  // }
+  ]
 }];
 
 /***/ }),
