@@ -1,0 +1,48 @@
+@import '@core/scss/base/pages/app-todo';
+@import '@core/scss/base/bootstrap-extended/modal';
+@import '@core/scss/angular/libs/quill-editor.component';
+@import '@core/scss/angular/libs/select.component';
+@import '@core/scss/angular/libs/drag-drop.component';
+@import '@core/scss/angular/libs/flatpickr.component';
+@import '@core/scss/angular/libs/datatables.component';
+@import '@core/scss/base/pages/app-user.scss';
+@import '@core/scss/angular/libs/select.component.scss';
+
+.btn-light-secondary{
+  background-color: #fff3da;
+  color: #ffb619;
+}
+.border-secondary{
+  border-color: #82868b !important;
+}
+.btn-gradient-secondary{
+  color: #30345E !important ;
+}
+.btn-secondary{
+  color: #30345E !important ;
+
+  &:hover{
+    color: white !important;
+    transition: 0.3s ease;
+  }
+}
+.btn-gray{
+    color: #30345E ;
+    background-color: #c0bec5;
+    border-color: #c0bec5;
+}
+
+.text-info{
+  color:#2495C0 !important;
+}
+.float-btn{
+  z-index: 2;
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  transition: 0.2s ease;
+}
+
+.float-btn:hover {
+  transform: translateY(-.8rem);
+}
