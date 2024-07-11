@@ -294,10 +294,10 @@ function DashboardComponent_div_0_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](9, "Filter By");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](10, "ng-select", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("ngModelChange", function DashboardComponent_div_0_Template_ng_select_ngModelChange_10_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("ngModelChange", function DashboardComponent_div_0_Template_ng_select_ngModelChange_10_listener($event) {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r9);
       const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r8.setDuration());
+      return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r8.setDuration($event));
     })("ngModelChange", function DashboardComponent_div_0_Template_ng_select_ngModelChange_10_listener($event) {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r9);
       const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
@@ -393,8 +393,8 @@ class DashboardComponent {
     }];
     this.duration = dash.getDuration();
   }
-  setDuration() {
-    this.dash.setDuration(this.duration);
+  setDuration(d) {
+    this.dash.setDuration(d);
     this.show = false;
     setTimeout(() => this.show = true, 20);
     this.init();
