@@ -13371,16 +13371,28 @@ function TokensAddComponent_ng_option_26_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
   }
   if (rf & 2) {
-    const o_r5 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("value", o_r5.value);
+    const o_r6 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("value", o_r6.value);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](o_r5.label);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](o_r6.label);
   }
 }
 function TokensAddComponent_small_28_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "small", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1, "Token Expiration is required");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+  }
+}
+function TokensAddComponent_app_find_service_29_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "app-find-service", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("selected", function TokensAddComponent_app_find_service_29_Template_app_find_service_selected_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r8);
+      const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r7.setService($event));
+    });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
   }
 }
@@ -13393,7 +13405,7 @@ function TokensAddComponent_span_34_Template(rf, ctx) {
 }
 function TokensAddComponent_div_35_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "div", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "div", 24);
   }
 }
 class TokensAddComponent {
@@ -13450,8 +13462,8 @@ class TokensAddComponent {
       reload: "reload"
     },
     decls: 36,
-    vars: 7,
-    consts: [[1, "slideout-content"], [1, "modal-header", "bg-transparent"], ["aria-label", "Close", "type", "button", 1, "close", "cursor-pointer", "shadow", 3, "click"], ["aria-hidden", "true"], [1, "modal-body", 3, "formGroup"], [1, "mt-5", "text-center", "mb-2"], [1, "text-center"], [1, "row"], [1, "col-md-6", "mb-1"], ["for", "token_name", 1, "font-weight-bold"], [1, "text-danger"], ["formControlName", "token_name", "id", "token_name", "placeholder", "Token Name", 1, "form-control", "w-100"], ["class", "text-danger", 4, "ngIf"], ["for", "expires_in", 1, "font-weight-bold"], ["id", "expires_in", "formControlName", "expires_in"], [3, "value", 4, "ngFor", "ngForOf"], [3, "selected"], [1, "mt-1", "d-flex", "justify-content-center", "align-items-center"], [1, "btn", "btn-danger", "mr-2", 3, "click"], [1, "btn", "btn-gradient-secondary", 3, "disabled", "click"], [4, "ngIf"], ["class", "spinner-border spinner-border-sm", "role", "status", 4, "ngIf"], [3, "value"], ["role", "status", 1, "spinner-border", "spinner-border-sm"]],
+    vars: 8,
+    consts: [[1, "slideout-content"], [1, "modal-header", "bg-transparent"], ["aria-label", "Close", "type", "button", 1, "close", "cursor-pointer", "shadow", 3, "click"], ["aria-hidden", "true"], [1, "modal-body", 3, "formGroup"], [1, "mt-5", "text-center", "mb-2"], [1, "text-center"], [1, "row"], [1, "col-md-6", "mb-1"], ["for", "token_name", 1, "font-weight-bold"], [1, "text-danger"], ["formControlName", "token_name", "id", "token_name", "placeholder", "Token Name", 1, "form-control", "w-100"], ["class", "text-danger", 4, "ngIf"], ["for", "expires_in", 1, "font-weight-bold"], ["id", "expires_in", "formControlName", "expires_in"], [3, "value", 4, "ngFor", "ngForOf"], [3, "selected", 4, "ngIf"], [1, "mt-1", "d-flex", "justify-content-center", "align-items-center"], [1, "btn", "btn-danger", "mr-2", 3, "click"], [1, "btn", "btn-gradient-secondary", 3, "disabled", "click"], [4, "ngIf"], ["class", "spinner-border spinner-border-sm", "role", "status", 4, "ngIf"], [3, "value"], [3, "selected"], ["role", "status", 1, "spinner-border", "spinner-border-sm"]],
     template: function TokensAddComponent_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "button", 2);
@@ -13487,11 +13499,7 @@ class TokensAddComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](27, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](28, TokensAddComponent_small_28_Template, 2, 0, "small", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](29, "app-find-service", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("selected", function TokensAddComponent_Template_app_find_service_selected_29_listener($event) {
-          return ctx.setService($event);
-        });
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](29, TokensAddComponent_app_find_service_29_Template, 1, 0, "app-find-service", 16);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](30, "div", 17)(31, "button", 18);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function TokensAddComponent_Template_button_click_31_listener() {
           return ctx.activeModal.dismiss();
@@ -13515,7 +13523,9 @@ class TokensAddComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx.options);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", (ctx.submitted || ctx.form.controls.expires_in.dirty) && (ctx.form.controls.expires_in.errors == null ? null : ctx.form.controls.expires_in.errors.required));
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", !ctx.serviceKey);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("disabled", ctx.loading || ctx.form.invalid);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", !ctx.loading);
