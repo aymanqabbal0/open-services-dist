@@ -15519,7 +15519,7 @@ const environment = {
   secretToken: '1ddc0870b1f0c10531dc77775e2df37cb897eaedd5acce729fe0dbcc215c9508',
   production: false,
   hmr: false,
-  apiUrl: 'https://b7f8-41-141-180-183.ngrok-free.app'
+  apiUrl: 'https://de75-193-37-152-201.ngrok-free.app'
 };
 
 /***/ }),
