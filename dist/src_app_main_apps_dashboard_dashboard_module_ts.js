@@ -106,38 +106,38 @@ class DashboardService {
     switch (this.duration) {
       case 'W':
         p = {
-          start_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().startOf('week').format('YYYY-MM-DD'),
-          end_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().endOf('week').format('YYYY-MM-DD')
+          start_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().startOf('week').format('YYYY-MM-DD hh:mm'),
+          end_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().endOf('week').format('YYYY-MM-DD hh:mm')
         };
         break;
       case '3M':
         p = {
-          start_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().subtract(3, 'months').startOf('month').format('YYYY-MM-DD'),
-          end_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().endOf('month').format('YYYY-MM-DD')
+          start_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().subtract(3, 'months').startOf('month').format('YYYY-MM-DD hh:mm'),
+          end_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().endOf('month').format('YYYY-MM-DD hh:mm')
         };
         break;
       case 'M':
         p = {
-          start_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().startOf('month').format('YYYY-MM-DD'),
-          end_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().endOf('month').format('YYYY-MM-DD')
+          start_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().startOf('month').format('YYYY-MM-DD hh:mm'),
+          end_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().endOf('month').format('YYYY-MM-DD hh:mm')
         };
         break;
       case 'D':
         p = {
-          start_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().startOf('day').format('YYYY-MM-DD'),
-          end_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().endOf('day').format('YYYY-MM-DD')
+          start_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().startOf('day').format('YYYY-MM-DD hh:mm'),
+          end_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().endOf('day').format('YYYY-MM-DD hh:mm')
         };
         break;
       case 'H':
         p = {
-          start_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().startOf('hour').format('YYYY-MM-DD'),
-          end_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().endOf('hour').format('YYYY-MM-DD')
+          start_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().startOf('hour').format('YYYY-MM-DD hh:mm'),
+          end_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().endOf('hour').format('YYYY-MM-DD hh:mm')
         };
         break;
       case 'Y':
         p = {
-          start_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().startOf('year').format('YYYY-MM-DD'),
-          end_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().endOf('year').format('YYYY-MM-DD')
+          start_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().startOf('year').format('YYYY-MM-DD hh:mm'),
+          end_date: moment__WEBPACK_IMPORTED_MODULE_1___default()().endOf('year').format('YYYY-MM-DD hh:mm')
         };
         break;
       // default:
