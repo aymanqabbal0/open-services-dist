@@ -9499,7 +9499,6 @@ class EndpointsEditComponent {
     }
     const endpoint = this.form.value;
     this.loading = true;
-    console.log('is taken res :::: ');
     this.service.updateEndpoint(this.endpoint.endpoint_id, endpoint).then(res => {
       if (res?.error === 'exists') {
         this.taken = true;
@@ -12805,15 +12804,20 @@ class ServicesService {
     });
   }
   updateEndpoint(id, endpoint) {
+    if (typeof endpoint.endpoint_payload_template === 'string') {
+      endpoint.endpoint_payload_template = (0,_utils_validation__WEBPACK_IMPORTED_MODULE_1__.tryParse)(endpoint.endpoint_payload_template);
+      console.warn('endpoint.endpoint_payload_template', endpoint.endpoint_payload_template);
+    }
     endpoint.endpoint_payload_template = endpoint.endpoint_payload_template.map(p => ({
       key: p.key,
       validation: p.validation,
       value: p.value
     }));
+    console.warn((0,_utils_validation__WEBPACK_IMPORTED_MODULE_1__.tryParse)(endpoint.endpoint_payload_template));
     return this.http.putData(_constants__WEBPACK_IMPORTED_MODULE_0__.Constants.API_ENDPOINTS + '/' + id, {
       ...endpoint,
       endpoint_response_example: (0,_utils_validation__WEBPACK_IMPORTED_MODULE_1__.tryParse)(endpoint.endpoint_response_example),
-      endpoint_payload_template: (0,_utils_validation__WEBPACK_IMPORTED_MODULE_1__.tryParse)('' + endpoint.endpoint_payload_template),
+      endpoint_payload_template: (0,_utils_validation__WEBPACK_IMPORTED_MODULE_1__.tryParse)(endpoint.endpoint_payload_template),
       endpoint_payload_example: (0,_utils_validation__WEBPACK_IMPORTED_MODULE_1__.tryParse)(endpoint.endpoint_payload_example)
     });
   }
